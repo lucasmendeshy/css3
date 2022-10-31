@@ -1,0 +1,79 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: gold;
+    height: 150px;
+}
+
+nav {
+    background: blue;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/*formatando layout com float
+
+main {
+    background-color: orangered;
+    height: 350px;
+    width: 80%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: green;
+    height: 350px;
+    width: 19%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: purple;
+    height: 50px;
+    clear: both;
+}
+
+
+*/
+
+
+/* formatando com flexbox */
+
+.flex {
+    display: flexbox;
+}
+
+main {
+    background-color: orangered;
+    height: 350px;
+    width: 80%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+aside {
+    background-color: green;
+    height: 350px;
+    width: 19%;
+    float: right;
+    margin-bottom: 10px;
+    
+
+}
+
+
+footer {
+    background-color: purple;
+    height: 50px;
+    clear: both;
+
+
+
+}

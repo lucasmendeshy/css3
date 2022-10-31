@@ -1,0 +1,101 @@
+body {
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+  .logo {
+      width: 80%;
+      height: 100px;
+      background-color: powderblue;
+      
+
+    }
+
+  .social {
+      width: 19%;
+      height: 100px;
+      background-color: powderblue;
+    }
+
+  nav {
+      background-color: royalblue;
+      height: 40px;
+      margin: 10px 0;
+      box-shadow: black 0 0 10px ;
+      
+    } 
+
+
+  main {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+   .conteudo {
+       width: 80%;
+       height: 350px;
+       background-color: salmon;
+       margin-bottom: 10px;
+
+
+    }
+
+    .lateral {
+        width: 19%;
+        height: 350px;
+        
+
+    }
+
+    .lateral div{
+      
+        height: 110px;
+        margin-bottom: 10px;
+        background-color: sandybrown;
+    }
+     
+    .conteudo0 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    
+    .conteudo1{
+      width: 49.5%;
+      height: 172px;
+      margin-bottom: 10px;
+      background-color: red;
+    }
+    
+    .conteudo2 {
+      width: 50%;
+      height: 172px;
+      margin-bottom: 10px;
+      background-color: yellow;
+    }
+    
+    footer {
+      background-color: green;
+      height: 50px;
+      
+    }
+    
+    
+    
+    
+
+    
+    
+

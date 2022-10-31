@@ -1,0 +1,68 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+     }
+
+     header {
+         background-color: red;
+         height: 130px;
+     }
+
+     nav {
+         background: yellow;
+         height: 40px;
+     }
+
+     main{
+         background-color: lightskyblue;
+         height: 300px;
+         margin: 10px 0;
+     }
+      /*Utilizando float*/
+
+     /* atalho de colunas -> .col1, .col2, .col3*/
+
+
+     /*
+     .col1, .col2, .col3 {
+         background-color: limegreen;
+         width: 32.5%;
+         height: 100px;
+         float: left;
+         margin-right: 1.25%;
+         margin-bottom: 10px;
+     }
+     .col3 {
+         margin: 0%;
+     }
+     footer {
+         background: black;
+         height: 50px;
+         clear: both;
+     }
+     */
+
+     /*flexbox*/
+
+     .colunas {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .col1, .col2, .col3 {
+         background: limegreen;
+         height: 100px;
+         width: 32.5%;
+         margin-bottom: 10px;
+     }
+      footer {
+          background: black;
+          height: 50px;
+          
+      }
+     
+
+
+
+

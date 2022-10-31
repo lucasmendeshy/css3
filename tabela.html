@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-image: url("imagens/fundonba.jpg"); /*fundo da tela utilizando imagem ao invés de cor.Pode ser declarado também como background-image*/
+            background-repeat: no-repeat; /* control a repetição da imagem na tela, por padrão a imagem se repete na horizontal e vertical por toda a tela*/
+            background-size: cover; /*controla o tamanho da imagem*/
+            background-color: red; /* cor do fundo, só aparece, neste caso, se a imagem não cobrir a tela toda*/
+            /* background: #0000;
+            color: whitesmoke; */
+        }
+        td{
+            border: green 2px solid;
+        }
+
+        tr{
+            background: cornflowerblue;
+            border: black 2px solid;
+        }
+
+        table{
+            background: coral;
+            border-collapse: collapse; /*agrupa as bordas da tabela e deixa mais fácil de formatá-las*/
+            border: black 2px solid;
+        }
+
+        
+        th{
+            background: black;
+            color: white;
+        
+
+        }
+
+
+        caption{
+            color: #bbb;
+            font-size: 12px;
+        }
+
+
+        
+        
+
+        .zebrada{
+            background: lightskyblue;
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <p>Tabelas são estruturas compostas por linhas e colunas sequenciais.</p>
+    <table>
+        <caption>NBA Temporada 21/22</caption>
+        <tr>
+            <th>Posição</th>
+            <th>Time</th>
+            <th>Vitórias</th>
+            <th>Jogos</th>
+        </tr>
+        <tr class="zebrada">
+            <td>1</td>
+            <td>Golden State Warriors</td>
+            <td>31</td>
+            <td rowspan="3">35</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Phoenix Suns</td>
+            <td>29</td>
+        </tr>
+
+        <tr class="zebrada">
+            <td>3</td>
+            <td>Broklin Nets</td>
+            <td>28</td>
+        </tr>
+
+    </table>
+
+<!--
+    Table - Abre a tabela
+    Tr (table row) - Abre a linha
+    Td (table description) - Abre a coluna
+    Th (table heading) - cabeçalho de tabelas
+    Caption - Legenda/descrição de tabelas
+    Colspan - mescla as colunas
+    Rowspan - mescla as linhas
+
+
+-->
+
+</body>
+</html>

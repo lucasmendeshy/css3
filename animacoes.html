@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações CSS</title>
+    <style>
+        *, *::after, *::before { box-sizing: border-box;}
+        /*Etapa 2: Executar/chamar a animação*/
+        body {
+            font-family: 'Segoe UI';
+           /* animation-name:animaFundo; 
+            animation-duration: 2s; 
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+            
+            /*Versão abreviada */
+
+            animation: animaFundo 3s infinite alternate;
+            
+
+            
+        }
+
+        .conteudo {
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            animation-name: aparecer;
+            animation-duration: 2s;
+
+        }
+
+
+        #dois { 
+            animation-delay: 1s;
+            animation-fill-mode: backwards;
+            
+        
+        
+        
+        }
+            
+        
+
+        @keyframes aparecer{
+            from{opacity: 0; }
+            to{ opacity: 1;}
+        }
+
+        /*Etapa 1: regra de animação*/
+
+        @keyframes animaFundo {
+            /*Sintaxe from/to: somente para 2 estados*/
+            from {background-color: red; } 
+            to { background-color: gold; }
+
+            /*Sintaxe percentual: para (quase) qualquer quantidade de estados*/
+            0% { background-color: beige;}
+            50% {background-color: lightcyan;}
+            100% {background-color: powderblue;}
+            
+        }
+
+        #tres {
+            border: solid 3px;
+            padding: 5px;
+            
+        }
+
+        #tres > img {
+            animation-name: animaImagem;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes animaImagem {
+            from {
+                transform: translateX(0) rotateZ(0); }
+                
+         
+            to {
+                transform: translateX(300px) rotateZ(360deg);
+                opacity: 1; }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Animando elementos</h1>
+    <hr>
+    <div class="conteudo" id="um">
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, numquam?.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nemo?.</p>
+    </div>
+
+    <div class="conteudo" id="dois">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ad..</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sit!.</p>
+    </div>
+    <hr>
+
+    <div id="tres">
+        <h2>Animando imagem</h2>
+        <img src="imagens/favicon.png" alt="">
+    </div>
+</body>
+</html>
